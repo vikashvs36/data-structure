@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.stream.Stream;
 
+// Undirected graph implementation using adjacency list representation
 public class UnDirectedAdjacencyListGraph {
     private int E; // Number of edges
     private final int V; // Number of vertices
@@ -55,5 +56,14 @@ public class UnDirectedAdjacencyListGraph {
             System.out.println();
         }
     }
-
 }
+
+/*
+* Number of vertices: 5
+Number of edges: 5
+Adjacency list of vertex 0: 1 2 
+Adjacency list of vertex 1: 0 2 3 
+Adjacency list of vertex 2: 0 1 
+Adjacency list of vertex 3: 1 4 
+Adjacency list of vertex 4: 3
+**/
