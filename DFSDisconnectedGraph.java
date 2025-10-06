@@ -6,12 +6,12 @@ import java.util.function.Predicate;
 // DFS implementation for a disconnected graph using adjacency list representation
 public class DFSDisconnectedGraph {
 
-    public void bfs(int start, Set<Integer> visited, Map<Integer, List<Integer>> adjList) {
+    public void dfs(int start, Set<Integer> visited, Map<Integer, List<Integer>> adjList) {
         visited.add(start);
         System.out.print(start+" ");
         for (int neighbor : adjList.getOrDefault(start, List.of())) {
             if (Predicate.not(visited::contains).test(neighbor)) {
-                bfs(neighbor, visited, adjList);
+                dfs(neighbor, visited, adjList);
             }
         }
     }
@@ -38,7 +38,7 @@ public class DFSDisconnectedGraph {
         for (Integer node: adjList.keySet()) {
             if (Predicate.not(visited::contains).test(node)) {
                 System.out.print("Component : ");
-                graph.bfs(node, visited, adjList);
+                graph.dfs(node, visited, adjList);
             System.out.println();
             }
         }
