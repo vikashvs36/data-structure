@@ -2,6 +2,15 @@ package graph.algo.topologicalSorting;
 
 import java.util.*;
 
+/*
+* When Not to Use
+* If your graph has cycles, topological sort is not valid — you must detect cycles first.
+* It only applies to Directed Acyclic Graphs (DAGs).
+* 
+* A graph is a DAG if:
+* It is directed, and
+* It contains no cycles
+* */
 public class DfsTopologicalSorting {
 
     public List<Integer> sorting(Map<Integer, List<Integer>> adjList) {
