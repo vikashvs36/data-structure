@@ -2,6 +2,7 @@ package graph;
 
 import java.util.*;
 
+// Breadth-First Search (BFS) implementation for a graph using adjacency list representation
 public class BfsOfGraph {
 
     public List<Integer> bfs(int start, Map<Integer, List<Integer>> adjList) {
@@ -40,3 +41,10 @@ public class BfsOfGraph {
                 .forEach(node -> System.out.print(node+ " "));
     }
 }
+
+
+/*
+* Output
+* 
+* Final BFS traversal order: 0 1 2 3 4 5
+ * */
