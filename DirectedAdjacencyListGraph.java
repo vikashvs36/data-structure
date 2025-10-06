@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+// Directed graph implementation using adjacency list representation
 public class DirectedAdjacencyListGraph {
     private int E;
     private final int V;
@@ -54,5 +55,17 @@ public class DirectedAdjacencyListGraph {
             System.out.print(innerValue+"\n");
         }
     }
-
 }
+
+
+/*
+* Output:
+* 
+* Number of vertices: 5
+Number of edges: 5
+Adjacency list of vertex 0: [1, 2]
+Adjacency list of vertex 1: [2, 3]
+Adjacency list of vertex 2: []
+Adjacency list of vertex 3: [4]
+Adjacency list of vertex 4: []
+* */
