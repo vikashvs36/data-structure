@@ -99,3 +99,10 @@ public class TarjanSCC {
 * [7]
 * [6]
 * */
+
+/*
+* Strongly Connected Components (SCCs) in a directed graph (most common use).
+* Time and Space Complexity:
+*      Time: O(V + E)
+*      Space: O(V) for tracking discovery times, low links, stack, etc.
+*/
